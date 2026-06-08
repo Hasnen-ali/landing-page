@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premier Schools Exhibition | India's Largest Schools Exhibition</title>
+  <meta name="description" content="India's largest boarding & day schools exhibition. Meet 100+ top school principals across 14 cities. Free entry for parents & students." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo" aria-label="PSE Home">
+        <div class="logo-box">
+          <span class="logo-box__icon">🏫</span>
+          <div>
+            <span class="logo-box__title">PSE</span>
+            <span class="logo-box__sub">Premier Schools Exhibition</span>
+          </div>
+        </div>
+      </a>
+      <nav class="header__nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#schools">Schools</a></li>
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#cities">Cities</a></li>
+          <li><a href="#register">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#register" class="btn btn--primary">Register Free</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#schools">Schools</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#cities">Cities</a></li>
+        <li><a href="#register">Register Free</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-label="Hero Slider">
+      <div class="hero__slider" id="heroSlider">
+
+        <div class="hero__slide active">
+          <div class="hero__bg" style="background-color:#0d2b5e"></div>
+          <div class="hero__overlay"></div>
+          <div class="container hero__content">
+            <span class="hero__tag">India's Largest</span>
+            <h1 class="hero__title">Discover India's<br><span>Premier Schools</span></h1>
+            <p class="hero__desc">Meet principals & admission heads of 100+ top boarding and day schools under one roof.</p>
+            <div class="hero__btns">
+              <a href="#register" class="btn btn--primary btn--lg">Register Free</a>
+              <a href="#about" class="btn btn--outline-white btn--lg">Know More</a>
+            </div>
+            <div class="hero__stats">
+              <div class="hero__stat"><strong>100+</strong><span>Schools</span></div>
+              <div class="hero__stat"><strong>14</strong><span>Cities</span></div>
+              <div class="hero__stat"><strong>21+</strong><span>Years</span></div>
+              <div class="hero__stat"><strong>Free</strong><span>Entry</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__slide">
+          <div class="hero__bg" style="background-color:#1a5276"></div>
+          <div class="hero__overlay"></div>
+          <div class="container hero__content">
+            <span class="hero__tag">Expert Seminars</span>
+            <h2 class="hero__title">Attend Free<br><span>Education Seminars</span></h2>
+            <p class="hero__desc">Learn about IB, Cambridge, CBSE & ICSE boards from leading education experts.</p>
+            <div class="hero__btns">
+              <a href="#register" class="btn btn--primary btn--lg">Register Now</a>
+              <a href="#highlights" class="btn btn--outline-white btn--lg">View Highlights</a>
+            </div>
+            <div class="hero__stats">
+              <div class="hero__stat"><strong>IB</strong><span>Cambridge</span></div>
+              <div class="hero__stat"><strong>CBSE</strong><span>ICSE</span></div>
+              <div class="hero__stat"><strong>10</strong><span>Countries</span></div>
+              <div class="hero__stat"><strong>Free</strong><span>Seminars</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__slide">
+          <div class="hero__bg" style="background-color:#154360"></div>
+          <div class="hero__overlay"></div>
+          <div class="container hero__content">
+            <span class="hero__tag">21st Edition</span>
+            <h2 class="hero__title">Find the Right School<br><span>for Your Child</span></h2>
+            <p class="hero__desc">Explore boarding, day & international schools. Compare boards. Meet admission teams directly.</p>
+            <div class="hero__btns">
+              <a href="#schools" class="btn btn--primary btn--lg">Explore Schools</a>
+              <a href="#cities" class="btn btn--outline-white btn--lg">Find Your City</a>
+            </div>
+            <div class="hero__stats">
+              <div class="hero__stat"><strong>21st</strong><span>Edition</span></div>
+              <div class="hero__stat"><strong>Top</strong><span>Ranked</span></div>
+              <div class="hero__stat"><strong>Meet</strong><span>Directly</span></div>
+              <div class="hero__stat"><strong>Free</strong><span>Entry</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Previous slide">&#8592;</button>
+      <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Next slide">&#8594;</button>
+      <div class="hero__dots" id="heroDots" role="tablist" aria-label="Slide navigation">
+        <button class="hero__dot active" data-slide="0" aria-label="Slide 1" aria-selected="true" role="tab"></button>
+        <button class="hero__dot" data-slide="1" aria-label="Slide 2" aria-selected="false" role="tab"></button>
+        <button class="hero__dot" data-slide="2" aria-label="Slide 3" aria-selected="false" role="tab"></button>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="statsbar" aria-label="Key statistics">
+      <div class="container statsbar__inner">
+        <div class="statsbar__item">
+          <strong>100+</strong>
+          <span>Participating Schools</span>
+        </div>
+        <div class="statsbar__item">
+          <strong>14</strong>
+          <span>Indian Cities</span>
+        </div>
+        <div class="statsbar__item">
+          <strong>21+</strong>
+          <span>Years of Trust</span>
+        </div>
+        <div class="statsbar__item">
+          <strong>10</strong>
+          <span>Countries</span>
+        </div>
+        <div class="statsbar__item">
+          <strong>Free</strong>
+          <span>Entry for All</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about" aria-labelledby="about-h">
+      <div class="container about__inner">
+        <div class="about__text">
+          <span class="tag">Who We Are</span>
+          <h2 id="about-h" class="section-title">India's Largest &amp; Oldest<br><span class="highlight">Schools Exhibition</span></h2>
+          <p>The Premier Schools Exhibition (PSE) is India's most prestigious platform connecting parents and students with India's top boarding and day schools. Now in its <strong>21st year</strong>, PSE travels to <strong>14 Indian cities</strong> and <strong>10 countries</strong> annually.</p>
+          <p>Meet school principals face-to-face. Attend free education seminars. Find the right school for your child — all under one roof.</p>
+          <ul class="about__list">
+            <li>✓ Free entry for all parents &amp; students</li>
+            <li>✓ Direct interaction with admission teams</li>
+            <li>✓ Expert-led education seminars</li>
+            <li>✓ Compare IB, Cambridge, CBSE &amp; ICSE boards</li>
+          </ul>
+          <a href="#register" class="btn btn--primary">Register Free</a>
+        </div>
+        <div class="about__visual">
+          <div class="about__img-box">
+            <div class="about__img-placeholder" role="img" aria-label="Exhibition event photo">
+              <span>📚</span>
+              <p>PSE 2025 Exhibition</p>
+            </div>
+            <div class="about__badge">
+              <strong>21</strong>
+              <span>Years of<br>Excellence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHOOL LOGOS MARQUEE -->
+    <section class="logos section" aria-labelledby="logos-h">
+      <div class="logos__header">
+        <span class="tag">Participating Schools</span>
+        <h2 id="logos-h" class="section-title">Schools You'll Meet at <span class="highlight">PSE</span></h2>
+        <p>Over 100 prestigious schools from across India and abroad</p>
+      </div>
+      <!-- Row 1: LTR -->
+      <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee marquee--ltr" id="marquee1">
+          <div class="marquee__inner">
+            <div class="marquee__set">
+              <div class="school-logo">The Doon School</div>
+              <div class="school-logo">Mayo College</div>
+              <div class="school-logo">The Scindia School</div>
+              <div class="school-logo">Woodstock School</div>
+              <div class="school-logo">Lawrence School</div>
+              <div class="school-logo">St. George's College</div>
+              <div class="school-logo">The Bishop's School</div>
+              <div class="school-logo">Rajkumar College</div>
+              <div class="school-logo">Ecole Globale</div>
+              <div class="school-logo">Welham Girls</div>
+            </div>
+            <div class="marquee__set" aria-hidden="true">
+              <div class="school-logo">The Doon School</div>
+              <div class="school-logo">Mayo College</div>
+              <div class="school-logo">The Scindia School</div>
+              <div class="school-logo">Woodstock School</div>
+              <div class="school-logo">Lawrence School</div>
+              <div class="school-logo">St. George's College</div>
+              <div class="school-logo">The Bishop's School</div>
+              <div class="school-logo">Rajkumar College</div>
+              <div class="school-logo">Ecole Globale</div>
+              <div class="school-logo">Welham Girls</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 2: RTL -->
+      <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee marquee--rtl" id="marquee2">
+          <div class="marquee__inner">
+            <div class="marquee__set">
+              <div class="school-logo">Delhi Public School</div>
+              <div class="school-logo">Ryan International</div>
+              <div class="school-logo">Heritage School</div>
+              <div class="school-logo">St. Peter's Panchgani</div>
+              <div class="school-logo">Shimla Public School</div>
+              <div class="school-logo">Good Shepherd</div>
+              <div class="school-logo">Pine Hall School</div>
+              <div class="school-logo">Mussoorie International</div>
+              <div class="school-logo">Toc-H Public School</div>
+              <div class="school-logo">Army Public School</div>
+            </div>
+            <div class="marquee__set" aria-hidden="true">
+              <div class="school-logo">Delhi Public School</div>
+              <div class="school-logo">Ryan International</div>
+              <div class="school-logo">Heritage School</div>
+              <div class="school-logo">St. Peter's Panchgani</div>
+              <div class="school-logo">Shimla Public School</div>
+              <div class="school-logo">Good Shepherd</div>
+              <div class="school-logo">Pine Hall School</div>
+              <div class="school-logo">Mussoorie International</div>
+              <div class="school-logo">Toc-H Public School</div>
+              <div class="school-logo">Army Public School</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHOOSE THE SCHOOL -->
+    <section class="schools section" id="schools" aria-labelledby="schools-h">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Find Your Match</span>
+          <h2 id="schools-h" class="section-title">Choose the Right <span class="highlight">School Type</span></h2>
+          <p>Explore different school categories and find the perfect fit for your child's future.</p>
+        </div>
+        <div class="schools__slider-wrap">
+          <div class="schools__track" id="schoolsTrack">
+            <div class="school-card">
+              <div class="school-card__icon">🏫</div>
+              <h3>Boarding Schools</h3>
+              <p>Full residential schools offering holistic development, discipline, and structured academics.</p>
+              <ul>
+                <li>24/7 Supervised Campus</li>
+                <li>CBSE / ICSE / IB / Cambridge</li>
+                <li>Sports &amp; Co-curricular</li>
+              </ul>
+              <a href="#register" class="btn btn--primary btn--sm">Explore</a>
+            </div>
+            <div class="school-card">
+              <div class="school-card__icon">🎒</div>
+              <h3>Day Schools</h3>
+              <p>Premium day schools with world-class infrastructure, qualified faculty and all-round excellence.</p>
+              <ul>
+                <li>Modern Infrastructure</li>
+                <li>Multiple Board Options</li>
+                <li>After-school Programs</li>
+              </ul>
+              <a href="#register" class="btn btn--primary btn--sm">Explore</a>
+            </div>
+            <div class="school-card">
+              <div class="school-card__icon">🌍</div>
+              <h3>International Schools</h3>
+              <p>Global curriculum schools offering IB, Cambridge IGCSE and A-Levels with international exposure.</p>
+              <ul>
+                <li>IB &amp; Cambridge Boards</li>
+                <li>Global Learning Env.</li>
+                <li>Multicultural Community</li>
+              </ul>
+              <a href="#register" class="btn btn--primary btn--sm">Explore</a>
+            </div>
+            <div class="school-card">
+              <div class="school-card__icon">👧</div>
+              <h3>Girls' Schools</h3>
+              <p>Exclusive girls' schools fostering leadership, confidence and academic excellence.</p>
+              <ul>
+                <li>All-Girls Environment</li>
+                <li>Leadership Programs</li>
+                <li>Safe &amp; Secure Campus</li>
+              </ul>
+              <a href="#register" class="btn btn--primary btn--sm">Explore</a>
+            </div>
+          </div>
+          <div class="schools__nav">
+            <button class="schools__btn" id="schoolsPrev" aria-label="Previous">&#8592;</button>
+            <div class="schools__dots" id="schoolsDots"></div>
+            <button class="schools__btn" id="schoolsNext" aria-label="Next">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXHIBITION HIGHLIGHTS -->
+    <section class="highlights section" id="highlights" aria-labelledby="highlights-h">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Why Attend</span>
+          <h2 id="highlights-h" class="section-title">Exhibition <span class="highlight">Highlights</span></h2>
+          <p>Everything you need to make the right school decision</p>
+        </div>
+        <div class="highlights__slider-wrap">
+          <div class="highlights__track" id="highlightsTrack">
+            <div class="highlight-card">
+              <div class="highlight-card__icon">🏫</div>
+              <h3>Meet 100+ Schools</h3>
+              <p>Interact directly with principals and admission heads of India's most prestigious schools.</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">🎓</div>
+              <h3>Free Seminars</h3>
+              <p>Expert-led sessions on choosing the right board, admissions, scholarships, and career paths.</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">📋</div>
+              <h3>Compare Boards</h3>
+              <p>Side-by-side comparison of CBSE, ICSE, IB and Cambridge to make an informed decision.</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">🏅</div>
+              <h3>Scholarship Info</h3>
+              <p>Get details about merit scholarships, financial aid, and entrance exam prep from schools directly.</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">🤝</div>
+              <h3>Counselling Support</h3>
+              <p>One-on-one counselling to identify your child's strengths and find the best school match.</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">✅</div>
+              <h3>Free Entry</h3>
+              <p>Completely free for all parents and students. No hidden charges — just opportunity.</p>
+            </div>
+          </div>
+          <div class="highlights__nav">
+            <button class="highlights__btn" id="highlightsPrev" aria-label="Previous">&#8592;</button>
+            <div class="highlights__dots" id="highlightsDots"></div>
+            <button class="highlights__btn" id="highlightsNext" aria-label="Next">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPCOMING CITIES -->
+    <section class="cities section" id="cities" aria-labelledby="cities-h">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Coming to Your City</span>
+          <h2 id="cities-h" class="section-title">Upcoming PSE <span class="highlight">Exhibitions</span></h2>
+          <p>Find an exhibition near you and register for free</p>
+        </div>
+        <div class="cities__grid">
+          <div class="city-card">
+            <div class="city-card__flag">🏙️</div>
+            <h3>New Delhi</h3>
+            <p class="city-card__date">Jan 11–12, 2025</p>
+            <p class="city-card__venue">The Oberoi, New Delhi</p>
+            <a href="#register" class="btn btn--outline btn--sm">Register</a>
+          </div>
+          <div class="city-card">
+            <div class="city-card__flag">🌆</div>
+            <h3>Mumbai</h3>
+            <p class="city-card__date">Feb 8–9, 2025</p>
+            <p class="city-card__venue">Grand Hyatt, Mumbai</p>
+            <a href="#register" class="btn btn--outline btn--sm">Register</a>
+          </div>
+          <div class="city-card">
+            <div class="city-card__flag">🏙️</div>
+            <h3>Bengaluru</h3>
+            <p class="city-card__date">Feb 22–23, 2025</p>
+            <p class="city-card__venue">ITC Gardenia, Bengaluru</p>
+            <a href="#register" class="btn btn--outline btn--sm">Register</a>
+          </div>
+          <div class="city-card">
+            <div class="city-card__flag">🌇</div>
+            <h3>Kolkata</h3>
+            <p class="city-card__date">Mar 8–9, 2025</p>
+            <p class="city-card__venue">Taj Bengal, Kolkata</p>
+            <a href="#register" class="btn btn--outline btn--sm">Register</a>
+          </div>
+          <div class="city-card">
+            <div class="city-card__flag">🏙️</div>
+            <h3>Hyderabad</h3>
+            <p class="city-card__date">Mar 22–23, 2025</p>
+            <p class="city-card__venue">Park Hyatt, Hyderabad</p>
+            <a href="#register" class="btn btn--outline btn--sm">Register</a>
+          </div>
+          <div class="city-card">
+            <div class="city-card__flag">🌆</div>
+            <h3>Chennai</h3>
+            <p class="city-card__date">Apr 5–6, 2025</p>
+            <p class="city-card__venue">Taj Coromandel</p>
+            <a href="#register" class="btn btn--outline btn--sm">Register</a>
+          </div>
+          <div class="city-card">
+            <div class="city-card__flag">🏙️</div>
+            <h3>Pune</h3>
+            <p class="city-card__date">Apr 19–20, 2025</p>
+            <p class="city-card__venue">JW Marriott, Pune</p>
+            <a href="#register" class="btn btn--outline btn--sm">Register</a>
+          </div>
+          <div class="city-card city-card--intl">
+            <div class="city-card__flag">🌍</div>
+            <h3>Dubai, UAE</h3>
+            <p class="city-card__date">May 3–4, 2025</p>
+            <p class="city-card__venue">Jumeirah, Dubai</p>
+            <a href="#register" class="btn btn--outline btn--sm">Register</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section" aria-labelledby="test-h">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">What Parents Say</span>
+          <h2 id="test-h" class="section-title">Trusted by <span class="highlight">Thousands of Families</span></h2>
+        </div>
+        <div class="testimonials__grid">
+          <blockquote class="testi-card">
+            <p>"PSE helped us shortlist the perfect boarding school for our daughter. Meeting the principals directly gave us the confidence to make the right decision."</p>
+            <footer>
+              <div class="testi-card__avatar">SM</div>
+              <div>
+                <cite>Sunita Mehta</cite>
+                <span>Parent, New Delhi</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testi-card">
+            <p>"The seminars were incredibly informative. We had no idea about the differences between IB and CBSE. PSE cleared all our doubts in one afternoon."</p>
+            <footer>
+              <div class="testi-card__avatar">RG</div>
+              <div>
+                <cite>Rajesh Gupta</cite>
+                <span>Parent, Mumbai</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testi-card">
+            <p>"Excellent event. We visited from Kolkata and were able to compare 15+ schools in just two days. Highly recommended for every parent."</p>
+            <footer>
+              <div class="testi-card__avatar">PB</div>
+              <div>
+                <cite>Priya Banerjee</cite>
+                <span>Parent, Kolkata</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTER CTA -->
+    <section class="cta section" id="register" aria-labelledby="cta-h">
+      <div class="container cta__inner">
+        <div class="cta__text">
+          <span class="tag tag--light">Free Registration</span>
+          <h2 id="cta-h" class="section-title" style="color:#fff">Register Now &amp; Secure<br>Your Child's Future</h2>
+          <p style="color:rgba(255,255,255,0.85)">Join thousands of families who trust PSE every year to find the right school.</p>
+        </div>
+        <div class="cta__form-wrap">
+          <form class="cta-form" id="ctaForm" novalidate aria-label="Free registration form">
+            <div class="cta-form__field">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Enter your name" required autocomplete="name" />
+              <span class="cta-form__error" id="fname-err"></span>
+            </div>
+            <div class="cta-form__field">
+              <label for="fphone">Mobile Number</label>
+              <input type="tel" id="fphone" name="fphone" placeholder="10-digit mobile number" required autocomplete="tel" pattern="[0-9]{10}" />
+              <span class="cta-form__error" id="fphone-err"></span>
+            </div>
+            <div class="cta-form__field">
+              <label for="fcity">Select City</label>
+              <select id="fcity" name="fcity" required>
+                <option value="" disabled selected>Choose your city</option>
+                <option>New Delhi</option>
+                <option>Mumbai</option>
+                <option>Bengaluru</option>
+                <option>Kolkata</option>
+                <option>Hyderabad</option>
+                <option>Chennai</option>
+                <option>Pune</option>
+                <option>Dubai, UAE</option>
+              </select>
+              <span class="cta-form__error" id="fcity-err"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Register for Free</button>
+            <p class="cta-form__note">✓ 100% Free. No spam. Your information is safe.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="logo-box logo-box--white">
+          <span class="logo-box__icon">🏫</span>
+          <div>
+            <span class="logo-box__title">PSE</span>
+            <span class="logo-box__sub">Premier Schools Exhibition</span>
+          </div>
+        </div>
+        <p>India's largest and oldest schools exhibition. Helping families find the right school for over 21 years.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook" class="footer__social-link">f</a>
+          <a href="#" aria-label="Instagram" class="footer__social-link">in</a>
+          <a href="#" aria-label="Twitter" class="footer__social-link">tw</a>
+          <a href="#" aria-label="YouTube" class="footer__social-link">yt</a>
+        </div>
+      </div>
+      <nav aria-label="Footer Quick Links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About PSE</a></li>
+          <li><a href="#schools">School Types</a></li>
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#cities">Cities</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer School Categories">
+        <h3>School Types</h3>
+        <ul>
+          <li><a href="#schools">Boarding Schools</a></li>
+          <li><a href="#schools">Day Schools</a></li>
+          <li><a href="#schools">International Schools</a></li>
+          <li><a href="#schools">Girls' Schools</a></li>
+          <li><a href="#schools">CBSE / ICSE / IB</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <h3>Contact</h3>
+        <p>📞 <a href="tel:+911234567890">+91 12345 67890</a></p>
+        <p>✉️ <a href="mailto:info@pse.in">info@pse.in</a></p>
+        <p>📍 New Delhi, India</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2025 Premier Schools Exhibition. All rights reserved.</p>
+        <nav aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="js/hero-slider.js"></script>
+  <script src="js/school-slider.js"></script>
+  <script src="js/exhibition-slider.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
